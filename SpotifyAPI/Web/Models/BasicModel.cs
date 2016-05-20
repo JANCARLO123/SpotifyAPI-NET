@@ -8,6 +8,9 @@ namespace SpotifyAPI.Web.Models
         [JsonProperty("error")]
         public Error Error { get; set; }
 
+        [JsonIgnore]
+        public ResponseInfo Response { get; set; }
+
         public Boolean HasError()
         {
             return Error != null;

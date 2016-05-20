@@ -69,6 +69,8 @@ namespace SpotifyAPI.Example
                 return;
             }
 
+            FullAlbum album = _spotify.GetAlbum("1KFttYHEjNkDMYQrV6qYMA");
+
             authButton.Enabled = false;
             _profile = _spotify.GetPrivateProfile();
 
